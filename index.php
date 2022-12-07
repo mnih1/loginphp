@@ -11,9 +11,27 @@
 </head>
 <body>
     
-    <div class="content">
-        KMEH?
+    <nav>
+        <div class="logo">
+            Something
+        </div>
+        <div class="menu">
+            <div class="row">
+                Aktualności
+            </div>
+            <div class="row">
+                Oferta
+            </div>
+            <div class="row">
+                Kontakt
+            </div>
+            <div class="row">
+                Zaloguj
+            </div>
+        </div>
+    </nav>
+    <div class="start">
+        
     </div>
-
 </body>
 </html>
