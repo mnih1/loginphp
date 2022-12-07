@@ -31,7 +31,9 @@
         </div>
     </nav>
     <div class="start">
-        
+        <?php
+            echo "";
+        ?>
     </div>
 </body>
 </html>
