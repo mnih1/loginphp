@@ -32,7 +32,10 @@
     </nav>
     <div class="start">
         <div class="start-text">
-            <h1>Cześć {USER}</h1>
+            <div>
+                <h1>Cześć {USER}</h1>
+                <h3>Co słychać?</h3>
+            </div>
             <!-- TODO: kod php który po zalogowaniu pokaże nazwe użytkownika -->
         </div>
         <div class="start-box">
