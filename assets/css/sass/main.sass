@@ -39,9 +39,15 @@ nav
         height: 100%
         @include center
         font-weight: 600
-        justify-content: space-around
+        justify-content: space-around !important
 
 .start
     width: 90%
     height: 70vh
     margin: auto
+    @include center
+    justify-content: space-between
+
+    .start-text, .start-box
+        width: 50%
+        height: 100%

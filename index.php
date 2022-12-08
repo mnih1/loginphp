@@ -31,9 +31,13 @@
         </div>
     </nav>
     <div class="start">
-        <?php
-            echo "";
-        ?>
+        <div class="start-text">
+            <h1>Cześć {USER}</h1>
+            <!-- TODO: kod php który po zalogowaniu pokaże nazwe użytkownika -->
+        </div>
+        <div class="start-box">
+
+        </div>
     </div>
 </body>
 </html>
