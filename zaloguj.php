@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +7,13 @@
     
     <link rel="stylesheet" href="./assets/css/sass/main.css">
     
-    <title>Main Site</title>
+    <title>Zaoguj do Something</title>
 </head>
 <body>
     
     <nav>
         <div class="logo">
-            Something
+            <a href="./index.php">Something</a>
         </div>
         <div class="menu">
             <div class="row">
@@ -30,17 +30,17 @@
             </div>
         </div>
     </nav>
-    <div class="start">
-        <div class="start-text">
-            <div>
-                <h1>Cześć {USER}!</h1>
-                <h3>Co słychać?</h3>
-            </div>
-            <!-- TODO: kod php który po zalogowaniu pokaże nazwe użytkownika -->
-        </div>
-        <div class="start-box">
 
-        </div>
+    <div class="container">
+        <form action="">
+            <h1>Zaloguj</h1>
+            <label for="input-login">
+                Login:
+                <input type="text" placeholder="przykladowymail@gmail.com" id="input-login">
+            </label>
+            <!-- TODO: Input hasło, Input logowanie itd + wysylizowanie -->
+        </form>
     </div>
+
 </body>
 </html>
