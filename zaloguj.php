@@ -38,7 +38,12 @@
                 Login:
                 <input type="text" placeholder="przykladowymail@gmail.com" id="input-login">
             </label>
+            <label for="input-haslo">
+                Hasło:
+                <input type="password" placeholder="Hasło" id="input-haslo">
+            </label>
             <!-- TODO: Input hasło, Input logowanie itd + wysylizowanie -->
+            <h6>Niepamiętam hasła</h6>
         </form>
     </div>
 

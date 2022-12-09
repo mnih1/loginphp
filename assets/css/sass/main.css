@@ -13,7 +13,7 @@
   align-items: center;
 }
 .container form {
-  width: 25%;
+  width: 27%;
   height: 500px;
   margin: 40px auto;
   background-color: #404B69;
@@ -25,11 +25,13 @@
   height: 50px;
   padding: 6px;
   text-align: center;
-  margin: 8px;
+  margin: 8px 0;
 }
 .container form label {
   width: 100%;
   height: 50px;
+  font-size: 16px;
+  font-weight: 600;
 }
 .container form label input {
   margin: 8px 0 24px;
@@ -39,6 +41,12 @@
   border-radius: 5px;
   background-color: #283149;
   padding: 5px;
+  font-size: 1.05rem;
+}
+.container form h6 {
+  width: 100%;
+  height: 10px;
+  text-align: center;
 }
 
 body {
