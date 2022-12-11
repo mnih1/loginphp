@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="./assets/css/sass/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <title>Zaoguj do Something</title>
 </head>
@@ -42,10 +43,15 @@
                 Hasło:
                 <input type="password" placeholder="Hasło" id="input-haslo">
             </label>
-            <!-- TODO: Input hasło, Input logowanie itd + wysylizowanie -->
+            <!-- TODO: Input logowanie itd + wysylizowanie -->
             <h6>Niepamiętam hasła</h6>
         </form>
     </div>
 
+<script>
+    AOS.init();
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
