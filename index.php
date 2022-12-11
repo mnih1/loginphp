@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="./assets/css/sass/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <title>Main Site</title>
 </head>
@@ -31,7 +32,7 @@
         </div>
     </nav>
     <div class="start">
-        <div class="start-text">
+        <div class="start-text" data-aos="zoom-in">
             <div>
                 <h1>Cześć {USER}!</h1>
                 <h3>Co słychać?</h3>
@@ -42,5 +43,12 @@
 
         </div>
     </div>
+
+
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
