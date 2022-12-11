@@ -32,7 +32,7 @@
         </div>
     </nav>
     <div class="start">
-        <div class="start-text" data-aos="zoom-in">
+        <div class="start-text" data-aos="fade-up">
             <div>
                 <h1>Cześć {USER}!</h1>
                 <h3>Co słychać?</h3>
@@ -46,9 +46,9 @@
 
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
