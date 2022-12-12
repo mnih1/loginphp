@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/sass/main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <title>Zaoguj do Something</title>
+    <title>Zaloguj do Something</title>
 </head>
 <body>
     
@@ -44,7 +44,9 @@
                 <input type="password" placeholder="Hasło" id="input-haslo">
             </label>
             <!-- TODO: Input logowanie itd + wysylizowanie -->
-            <h6>Niepamiętam hasła</h6>
+            <input type="submit" class="btn-submit" value="Zaloguj">
+            
+            <a href="">Nie pamiętam hasła</a>
         </form>
     </div>
 
