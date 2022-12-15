@@ -69,6 +69,32 @@
   border-bottom: solid 3px #00818A;
 }
 
+footer {
+  width: 100%;
+  height: 45vh;
+  background-color: #242524;
+  color: #f1f1f1;
+  padding: 5px;
+}
+footer .main {
+  width: 100%;
+  height: calc(100% - 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between !important;
+}
+footer .main .box {
+  width: calc(25% - 10px);
+}
+footer .copyright {
+  width: 100%;
+  height: 20px;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+}
+
 body {
   background-color: #283149;
   color: #DBEDF3;
