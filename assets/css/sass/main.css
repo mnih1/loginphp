@@ -71,8 +71,39 @@
 
 footer {
   width: 100%;
+<<<<<<< HEAD
   height: 350px;
   background-color: #242526;
+=======
+  height: 45vh;
+  background-color: #242524;
+  color: #f1f1f1;
+  padding: 5px;
+}
+footer .main {
+  width: 100%;
+  height: calc(100% - 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between !important;
+}
+footer .main .box {
+  width: calc(25% - 10px);
+}
+footer .copyright {
+  width: 100%;
+  height: 20px;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+}
+
+.content {
+  width: 100%;
+  height: 70vh;
+  font-size: 70px;
+>>>>>>> 24b947fdacbbd23841eb95cbed82eaf2e7aae42a
 }
 
 body {

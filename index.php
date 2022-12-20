@@ -32,7 +32,7 @@
         </div>
     </nav>
     <div class="start">
-        <div class="start-text" data-aos="fade-up">
+        <div class="start-text" data-aos="fade-up" data-aos-duration="1700">
             <div>
                 <h1>Cześć {USER}!</h1>
                 <h3>Co słychać?</h3>
@@ -43,6 +43,33 @@
 
         </div>
     </div>
+    <div class="content">
+        test
+    </div>
+
+    <footer>
+        <div class="main">
+            <div class="box">
+                <a href="">Something</a>
+                <a href="">Aktualności</a>
+                <a href="">Oferta</a>
+                <a href="">Kontakt</a>
+                <a href="">{Zaloguj}</a>
+            </div>
+            <div class="box">
+
+            </div>
+            <div class="box">
+
+            </div>
+            <div class="box">
+
+            </div>
+        </div>
+        <div class="copyright">
+            2022 &copy; MNIH
+        </div>
+    </footer>
 
 
 
