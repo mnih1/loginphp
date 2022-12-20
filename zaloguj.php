@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="./assets/css/sass/main.css">
+    <link rel="stylesheet" href="./assets/css/sass/main.css?v=<?php echo time(); ?>">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <title>Zaloguj do Something</title>
@@ -49,6 +49,27 @@
             <a href="">Nie pamiętam hasła</a>
         </form>
     </div>
+    
+    <footer>
+
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+
+    <div class="copy">
+        2022 &copy; MNIH
+    </div>
+
+    </footer>
 
 <script>
     AOS.init();
