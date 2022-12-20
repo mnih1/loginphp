@@ -51,24 +51,27 @@
     </div>
     
     <footer>
+        <div class="main">
+            <div class="box">
+                <a href="">Something</a>
+                <a href="">Aktualności</a>
+                <a href="">Oferta</a>
+                <a href="">Kontakt</a>
+                <a href="">{Zaloguj}</a>
+            </div>
+            <div class="box">
 
-    <div class="box">
+            </div>
+            <div class="box">
 
-    </div>
-    <div class="box">
+            </div>
+            <div class="box">
 
-    </div>
-    <div class="box">
-
-    </div>
-    <div class="box">
-
-    </div>
-
-    <div class="copy">
-        2022 &copy; MNIH
-    </div>
-
+            </div>
+        </div>
+        <div class="copyright">
+            2022 &copy; MNIH
+        </div>
     </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
