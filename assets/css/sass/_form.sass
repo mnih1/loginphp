@@ -42,18 +42,32 @@
             @include center
             margin: 15px 0
 
-        .btn-submit
-            width: 100%
-            margin: 15px auto
-            height: 56px
-            color: #DBEDF3
-            background-color: #00818a
-            transition: 0.5s all
-            border: none
-            font-size: 17px
-            border-radius: 15px
+        .submit-box
+            @include center
+            flex-direction: column
 
-            &:hover
-                cursor: pointer
+            hr
+                width: 0
+                height: 4px
+                position: relative
+                top: -15px
+                border: none
+                background-color: #00818a
+                transition: 0.5s all ease-in-out
+
+            .btn-submit
+                width: 100%
+                margin: 15px auto
+                height: 56px
+                color: #DBEDF3
+                background-color: #00818a
+                border: none
+                transition: 0.5s all ease-in-out
+                font-size: 17px
+                border-radius: 15px
+
+            &:hover .btn-submit
                 background: none
-                border-bottom: solid 3px #00818A
+
+            &:hover hr
+                width: 100%

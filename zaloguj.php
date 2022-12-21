@@ -33,7 +33,7 @@
     </nav>
 
     <div class="container">
-        <form action="">
+        <form action="" data-aos="flip-right">
             <h1>Zaloguj</h1>
             <label for="input-login">
                 Login:
@@ -43,8 +43,10 @@
                 Hasło:
                 <input type="password" placeholder="Hasło" id="input-haslo">
             </label>
-            <!-- TODO: Input logowanie itd + wysylizowanie -->
-            <input type="submit" class="btn-submit" value="Zaloguj">
+            <div class="submit-box">
+                <input type="submit" class="btn-submit" value="Zaloguj">
+                <hr>
+            </div>
             
             <a href="">Nie pamiętam hasła</a>
         </form>
@@ -53,7 +55,7 @@
     <footer>
         <div class="main">
             <div class="box">
-                <a href="">Something</a>
+                <a href="./index.php">Something</a>
                 <a href="">Aktualności</a>
                 <a href="">Oferta</a>
                 <a href="">Kontakt</a>

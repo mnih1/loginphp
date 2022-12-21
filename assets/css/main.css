@@ -52,21 +52,37 @@
   align-items: center;
   margin: 15px 0;
 }
-.container form .btn-submit {
+.container form .submit-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container form .submit-box hr {
+  width: 0;
+  height: 4px;
+  position: relative;
+  top: -15px;
+  border: none;
+  background-color: #00818a;
+  transition: 0.5s all ease-in-out;
+}
+.container form .submit-box .btn-submit {
   width: 100%;
   margin: 15px auto;
   height: 56px;
   color: #DBEDF3;
   background-color: #00818a;
-  transition: 0.5s all;
   border: none;
+  transition: 0.5s all ease-in-out;
   font-size: 17px;
   border-radius: 15px;
 }
-.container form .btn-submit:hover {
-  cursor: pointer;
+.container form .submit-box:hover .btn-submit {
   background: none;
-  border-bottom: solid 3px #00818A;
+}
+.container form .submit-box:hover hr {
+  width: 100%;
 }
 
 footer {
@@ -82,15 +98,17 @@ footer .main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px;
-  justify-content: space-between !important;
+  padding: 25px 40px;
+  justify-content: space-around !important;
 }
 footer .main .box {
   width: calc(25% - 10px);
   display: flex;
   flex-direction: column;
   padding: 7px;
-  margin: 15px;
+  color: #f1f1f1;
+  font-size: 17px;
+  row-gap: 5px;
 }
 footer .copyright {
   width: 100%;
