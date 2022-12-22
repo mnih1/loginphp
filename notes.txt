@@ -1,3 +1,4 @@
 Tworzenie użytkownika do bazy something
 CREATE USER 'config'@'localhost' IDENTIFIED BY 'SuperTajneHaslo123@';
 
+GRANT ALL PRIVILEGES ON something.* TO 'config'@'localhost' IDENTIFIED BY 'SuperTajneHaslo123@';
