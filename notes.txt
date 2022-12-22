@@ -1,0 +1,3 @@
+Tworzenie użytkownika do bazy something
+CREATE USER 'config'@'localhost' IDENTIFIED BY 'SuperTajneHaslo123@';
+
