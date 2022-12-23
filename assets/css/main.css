@@ -33,6 +33,9 @@
   font-size: 16px;
   font-weight: 600;
 }
+.container form label:hover {
+  cursor: pointer;
+}
 .container form label input {
   margin: 8px 0 24px;
   width: 100%;
@@ -83,6 +86,17 @@
 }
 .container form .submit-box:hover hr {
   width: 100%;
+}
+.container .register-form {
+  min-height: 800px !important;
+}
+.container .register-form #accept {
+  width: auto;
+  height: auto;
+  border: none;
+}
+.container .register-form #accept:hover {
+  cursor: pointer;
 }
 
 footer {

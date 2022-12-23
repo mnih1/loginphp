@@ -11,6 +11,8 @@
     <title>Zaloguj do Something</title>
 </head>
 <body>
+
+    <!-- Tu kod php który będzie logował -->
     
     <nav>
         <div class="logo">
@@ -33,23 +35,35 @@
     </nav>
 
     <div class="container">
-        <form action="" data-aos="flip-right">
-            <h1>Zaloguj</h1>
-            <label for="input-login">
-                Login:
-                <input type="text" placeholder="przykladowymail@gmail.com" id="input-login">
+        <form action="" data-aos="flip-right" class="register-form">
+            <h1>Zarejestruj się</h1>
+            <label for="email">
+                Email:
+                <input type="email" name="" id="email" placeholder="przykładowy.email@email.com">
             </label>
-            <label for="input-haslo">
+            <label for="user-name">
+                Nazwa użytkownika:
+                <input type="text" name="" id="user-name">
+            </label>
+            <label for="password1">
                 Hasło:
-                <input type="password" placeholder="Hasło" id="input-haslo">
+                <input type="password" name="" id="password1">
+            </label>
+            <label for="password2">
+                Powtórz hasło:
+                <input type="password" name="" id="password2">
+            </label>
+            <label for="accept">
+                <input type="checkbox" name="" id="accept" require> Zezwolenie na przetworzenie danych.
             </label>
             <div class="submit-box">
-                <input type="submit" class="btn-submit" value="Zaloguj">
+                <input type="submit" class="btn-submit" value="Zarejestruj się">
                 <hr>
             </div>
+
             
-            <a href="">Nie pamiętam hasła</a>
-            <a href="rejestracja.php">Zarejestruj się</a>
+            <a href="zaloguj.php">Mam już konto.</a>
+
         </form>
     </div>
     
