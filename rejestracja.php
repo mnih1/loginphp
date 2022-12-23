@@ -1,5 +1,26 @@
+<?php
+
+    session_start();
+
+    require_once("config.php");
+
+    $db_host = "";
+    $db_user = "";
+    $db_pass = "";
+    $db_name = "";
+
+    databaseLogin();
+
+    $conn = @new mysqli($db_host, $db_user, $db_pass, $db_name);
+    if($conn->connect_errno !=0){
+        echo "Błąd połączenia: " . $conn->connect_error;
+    }
+
+?>
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

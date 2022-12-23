@@ -6,5 +6,3 @@
         $db_pass = "SuperTajneHaslo123@";
         $db_name = "something";
     }
-
-?>
