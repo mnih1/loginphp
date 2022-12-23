@@ -3,6 +3,7 @@
     session_start();
 
     require_once("includes/config.php");
+    require_once("includes/signup.inc.php");
 
     $db_host = "";
     $db_user = "";
@@ -50,35 +51,35 @@
                 <a href="">Kontakt</a>
             </div>
             <div class="row">
-                <a href="./zaloguj.php">Zaloguj</a>
+                <a href="./signin.php">Zaloguj</a>
             </div>
         </div>
     </nav>
 
     <div class="container">
-        <form action="" data-aos="flip-right" class="register-form">
+        <form action="signup.inc.php" method="post" data-aos="flip-right" class="register-form">
             <h1>Zarejestruj się</h1>
+            <label for="user-name">
+                Nazwa użytkownika:
+                <input type="text" name="user_name" id="user-name">
+            </label>
             <label for="email">
                 Email:
                 <input type="email" name="" id="email" placeholder="przykładowy.email@email.com">
             </label>
-            <label for="user-name">
-                Nazwa użytkownika:
-                <input type="text" name="" id="user-name">
-            </label>
             <label for="password1">
                 Hasło:
-                <input type="password" name="" id="password1">
+                <input type="password" name="pass" id="password1">
             </label>
             <label for="password2">
                 Powtórz hasło:
-                <input type="password" name="" id="password2">
+                <input type="password" name="passReapet" id="password2">
             </label>
-            <label for="accept">
+            <!-- <label for="accept">
                 <input type="checkbox" name="" id="accept" require> Zezwolenie na przetworzenie danych.
-            </label>
+            </label> -->
             <div class="submit-box">
-                <input type="submit" class="btn-submit" value="Zarejestruj się">
+                <input type="submit" name="signup" class="btn-submit" value="Zarejestruj się">
                 <hr>
             </div>
 
