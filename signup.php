@@ -3,20 +3,6 @@
     session_start();
 
     require_once("includes/config.php");
-    require_once("includes/signup.inc.php");
-
-    $db_host = "";
-    $db_user = "";
-    $db_pass = "";
-    $db_name = "";
-
-    databaseLogin();
-
-    $conn = @new mysqli($db_host, $db_user, $db_pass, $db_name);
-    if($conn->connect_errno !=0){
-        echo "Błąd połączenia: " . $conn->connect_error;
-    }
-
 ?>
 
 
@@ -57,7 +43,7 @@
     </nav>
 
     <div class="container">
-        <form action="signup.inc.php" method="post" data-aos="flip-right" class="register-form">
+        <form action="includes/singup.inc.php" method="post" data-aos="flip-right" class="register-form">
             <h1>Zarejestruj się</h1>
             <label for="user-name">
                 Nazwa użytkownika:
@@ -65,7 +51,7 @@
             </label>
             <label for="email">
                 Email:
-                <input type="email" name="" id="email" placeholder="przykładowy.email@email.com">
+                <input type="email" name="mail" id="email" placeholder="przykładowy.email@email.com">
             </label>
             <label for="password1">
                 Hasło:
@@ -73,7 +59,7 @@
             </label>
             <label for="password2">
                 Powtórz hasło:
-                <input type="password" name="passReapet" id="password2">
+                <input type="password" name="passRepeat" id="password2">
             </label>
             <!-- <label for="accept">
                 <input type="checkbox" name="" id="accept" require> Zezwolenie na przetworzenie danych.
@@ -84,7 +70,7 @@
             </div>
 
             
-            <a href="zaloguj.php">Mam już konto.</a>
+            <a href="signin.php">Mam już konto.</a>
 
         </form>
     </div>

@@ -3,18 +3,6 @@
 
     require_once("includes/config.php");
 
-    $db_host = "";
-    $db_user = "";
-    $db_pass = "";
-    $db_name = "";
-
-    databaseLogin();
-
-    $conn = @new mysqli($db_host, $db_user, $db_pass, $db_name);
-    if($conn->connect_errno !=0){
-        echo "Błąd połączenia: " . $conn->connect_error;
-    }
-
 ?>
 
 <!DOCTYPE html>
@@ -46,7 +34,7 @@
                 <a href="">Kontakt</a>
             </div>
             <div class="row">
-                <a href="./zaloguj.php">Zaloguj</a>
+                <a href="./signin.php">Zaloguj</a>
             </div>
         </div>
     </nav>
@@ -68,7 +56,7 @@
             </div>
             
             <a href="">Nie pamiętam hasła</a>
-            <a href="rejestracja.php">Zarejestruj się</a>
+            <a href="signup.php">Zarejestruj się</a>
         </form>
     </div>
     
