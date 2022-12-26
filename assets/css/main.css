@@ -43,8 +43,19 @@
   border: none;
   border-radius: 5px;
   background-color: #283149;
+  color: #DBEDF3;
   padding: 5px;
   font-size: 1.05rem;
+}
+.container form label input.fail {
+  border: 2px solid #ED4337;
+}
+.container form label .error-name {
+  position: relative;
+  top: -15px;
+  color: #ED4337;
+  font-size: 15px;
+  z-index: 2;
 }
 .container form a {
   width: 100%;
@@ -60,6 +71,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.container form .submit-box .singup-done {
+  width: 100%;
+  text-align: center;
 }
 .container form .submit-box hr {
   width: 0;

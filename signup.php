@@ -47,26 +47,140 @@
             <h1>Zarejestruj się</h1>
             <label for="user-name">
                 Nazwa użytkownika:
-                <input type="text" name="user_name" id="user-name">
+                <input 
+                    type="text" 
+                    name="user_name" 
+                    id="user-name"
+                    <?php
+                        if (isset($_GET["error"])){
+                            if ($_GET["error"] == "emptyInput" || $_GET["error"] == "invalidUname" || $_GET["error"] == "userExists"){
+                                echo "class='fail'";
+                            }
+                        }
+                    ?>
+                >
+
+                <?php
+                    if (isset($_GET["error"])){
+                        if ($_GET["error"] == "emptyInput"){
+                            echo "<p class='error-name'>Pole nie może być puste!</p>";
+                        }
+                        if ($_GET["error"] == "invalidUname"){
+                            echo "<p class='error-name'>Zła nazwa użytkownika!</p>";
+                        }
+                        if ($_GET["error"] == "userExists"){
+                            echo "<p class='error-name'>Nazwa zajęta!</p>";
+                        }
+                    }
+                ?>
+
             </label>
             <label for="email">
                 Email:
-                <input type="email" name="mail" id="email" placeholder="przykładowy.email@email.com">
+                <input 
+                    type="email" 
+                    name="mail" 
+                    id="email" 
+                    placeholder="przykładowy.email@email.com"
+
+                    <?php
+                        if (isset($_GET["error"])){
+                            if ($_GET["error"] == "emptyInput" || $_GET["error"] == "invalidEmail" || $_GET["error"] == "userExists"){
+                                echo "class='fail'";
+                            }
+                        }
+                    ?>
+
+                >
+
+                <?php
+                    if (isset($_GET["error"])){
+                        if ($_GET["error"] == "emptyInput"){
+                            echo "<p class='error-name'>Pole nie może być puste!</p>";
+                        }
+                        if ($_GET["error"] == "invalidEmail"){
+                            echo "<p class='error-name'>Błędny email!</p>";
+                        }
+                        if ($_GET["error"] == "userExists"){
+                            echo "<p class='error-name'>Ten email już został zarejestrowany!</p>";
+                        }
+                    }
+                ?>
+
             </label>
             <label for="password1">
                 Hasło:
-                <input type="password" name="pass" id="password1">
+                <input 
+                type="password" 
+                    name="pass" 
+                    id="password1"
+
+                    <?php
+                        if (isset($_GET["error"])){
+                            if ($_GET["error"] == "emptyInput" || $_GET["error"] == "passwordMatch"){
+                                echo "class='fail'";
+                            }
+                        }
+                    ?>
+
+                >
+
+                <?php
+                    if (isset($_GET["error"])){
+                        if ($_GET["error"] == "emptyInput"){
+                            echo "<p class='error-name'>Pole nie może być puste!</p>";
+                        }
+                        if ($_GET["error"] == "passwordMatch"){
+                            echo "<p class='error-name'>Hasła do siebie nie pasują!</p>";
+                        }
+                    }
+                ?>
+
             </label>
             <label for="password2">
                 Powtórz hasło:
-                <input type="password" name="passRepeat" id="password2">
+                <input 
+                    type="password" 
+                    name="passRepeat" 
+                    id="password2"
+
+                    <?php
+                        if (isset($_GET["error"])){
+                            if ($_GET["error"] == "emptyInput" || $_GET["error"] == "passwordMatch"){
+                                echo "class='fail'";
+                            }
+                        }
+                    ?>
+
+                >
+
+                <?php
+                    if (isset($_GET["error"])){
+                        if ($_GET["error"] == "emptyInput"){
+                            echo "<p class='error-name'>Pole nie może być puste!</p>";
+                        }
+                        if ($_GET["error"] == "passwordMatch"){
+                            echo "<p class='error-name'>Hasła do siebie nie pasują!</p>";
+                        }
+                    }
+                ?>
+
             </label>
-            <!-- <label for="accept">
-                <input type="checkbox" name="" id="accept" require> Zezwolenie na przetworzenie danych.
-            </label> -->
             <div class="submit-box">
                 <input type="submit" name="signup" class="btn-submit" value="Zarejestruj się">
                 <hr>
+
+                <?php
+                    if (isset($_GET["error"])){
+                        if ($_GET["error"] == "none"){
+                            echo "<p class='singup-done'>Zostałeś zarejestrowany!</p>";
+                        }
+                        if ($_GET["error"] == "stmtfailed"){
+                            echo "<p class='singup-done'>Coś poszło nie tak! Spróbuj później </p>";
+                        }
+                    }
+                ?>
+
             </div>
 
             

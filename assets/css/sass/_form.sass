@@ -35,8 +35,19 @@
                 border: none
                 border-radius: 5px
                 background-color: #283149
+                color: #DBEDF3
                 padding: 5px
                 font-size: 1.05rem
+
+                &.fail
+                    border: 2px solid #ED4337
+
+            .error-name
+                position: relative
+                top: -15px
+                color: #ED4337
+                font-size: 15px
+                z-index: 2
 
         a
             width: 100%
@@ -48,6 +59,10 @@
         .submit-box
             @include center
             flex-direction: column
+
+            .singup-done
+                width: 100%
+                text-align: center
 
             hr
                 width: 0

@@ -44,11 +44,11 @@
             <h1>Zaloguj</h1>
             <label for="input-login">
                 Login:
-                <input type="text" placeholder="przykladowymail@gmail.com" id="input-login">
+                <input type="text" name="mail" placeholder="przykladowymail@gmail.com" id="input-login">
             </label>
             <label for="input-haslo">
                 Hasło:
-                <input type="password" placeholder="Hasło" id="input-haslo">
+                <input type="password" name="pass" placeholder="Hasło" id="input-haslo">
             </label>
             <div class="submit-box">
                 <input type="submit" class="btn-submit" value="Zaloguj">
