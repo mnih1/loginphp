@@ -28,8 +28,12 @@
             header("location: ../signup.php?error=passwordMatch");
             exit();
         }
-        if(userExists($conn, $username, $mail) !== false){
+        if(userExists($conn, $username) !== false){
             header("location: ../signup.php?error=userExists");
+            exit();
+        }
+        if(emialExists($conn, $mail) !== false){
+            header("location: ../signup.php?error=emialExists");
             exit();
         }
 
