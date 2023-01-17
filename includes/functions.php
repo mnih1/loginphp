@@ -42,14 +42,8 @@
         }
         return $result;
     }
-<<<<<<< HEAD
-
-    function userExists($conn, $username, $mail){
-        $sql = "SELECT * FROM users WHERE username = ? AND mail = ?;";
-=======
     function userExists($conn, $username){
         $sql = "SELECT * FROM users WHERE username = ?;";
->>>>>>> 76365050f360dfe3db8b323ff1abbe9292fae7da
         $stmt = mysqli_stmt_init($conn);
 
         if (!mysqli_stmt_prepare($stmt, $sql)){
