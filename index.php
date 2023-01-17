@@ -34,7 +34,21 @@
                 <a href="">Kontakt</a>
             </div>
             <div class="row">
-                <a href="./signin.php">Zaloguj</a>
+                <?php
+                    if(isset($_SESSION["userName"])){
+                        echo "<form action='includes/logout.php' method='post'>
+                        <input type='submit' value='Wyloguj się' name='logout_btn'>
+                    </form>";
+                    }
+                    else{
+                        echo "<a href='./signin.php'>Zaloguj</a>";
+                    }
+                ?>
+            
+            
+                <!-- <form action="includes/logout.php" method="post">
+                    <input type="submit" value="Wyloguj się" name="logout_btn">
+                </form> -->
             </div>
         </div>
     </nav>
@@ -42,9 +56,9 @@
         <div class="start-text" data-aos="fade-up" data-aos-duration="1700">
             <div>
                 <h1>
-                    Cześć <?php
+                    Cześć<?php
                         if(isset($_SESSION["userName"])){
-                            echo $_SESSION["userName"];
+                            echo " " . $_SESSION["userName"];
                         }
                     ?>!
                 </h1>

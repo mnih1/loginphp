@@ -182,11 +182,28 @@ nav .menu {
   float: right;
   width: 50%;
   height: 100%;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 600;
   justify-content: space-around !important;
+}
+nav .menu .row form {
+  width: 100%;
+  height: 100%;
+}
+nav .menu .row form input {
+  background: none;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  color: #DBEDF3;
+}
+nav .menu .row form input:hover {
+  cursor: pointer;
 }
 
 .start {
