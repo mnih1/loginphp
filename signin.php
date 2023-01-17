@@ -1,5 +1,4 @@
 <?php
-    session_start();
 
     require_once("includes/config.php");
 
@@ -40,18 +39,61 @@
     </nav>
 
     <div class="container">
-        <form action="" data-aos="flip-right">
+        <form action="includes/login.inc.php" method="post" data-aos="flip-right">
             <h1>Zaloguj</h1>
             <label for="input-login">
                 Login:
-                <input type="text" name="mail" placeholder="przykladowymail@gmail.com" id="input-login">
+                <input 
+                type="text" 
+                name="mail" 
+                placeholder="przykladowymail@gmail.com" 
+                id="input-login"
+                <?php
+                    if (isset($_GET["error"])){
+                        if ($_GET["error"] == "emptyInput" || $_GET["error"] == "wronglogin"){
+                            echo "class='fail'";
+                        }
+                    }
+                ?>
+                >
+
+                <?php
+                    if (isset($_GET["error"])){
+                        if ($_GET["error"] == "emptyInput"){
+                            echo "<p class='error-name'>Pole nie może być puste!</p>";
+                        }
+                    }
+                ?>
             </label>
             <label for="input-haslo">
                 Hasło:
-                <input type="password" name="pass" placeholder="Hasło" id="input-haslo">
+                <input 
+                type="password" 
+                name="pass" 
+                placeholder="Hasło" 
+                id="input-haslo"
+                <?php
+                    if (isset($_GET["error"])){
+                        if ($_GET["error"] == "emptyInput" || $_GET["error"] == "wronglogin"){
+                            echo "class='fail'";
+                        }
+                    }
+                ?>
+                >
+
+                <?php
+                    if (isset($_GET["error"])){
+                        if ($_GET["error"] == "emptyInput"){
+                            echo "<p class='error-name'>Pole nie może być puste!</p>";
+                        }
+                        if ($_GET["error"] == "wronglogin"){
+                            echo "<p class='error-name'>Email lub hasło jest niepoprawne</p>";
+                        }
+                    }
+                ?>
             </label>
             <div class="submit-box">
-                <input type="submit" class="btn-submit" value="Zaloguj">
+                <input type="submit" name="submit" class="btn-submit" value="Zaloguj">
                 <hr>
             </div>
             

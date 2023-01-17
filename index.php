@@ -41,7 +41,13 @@
     <div class="start">
         <div class="start-text" data-aos="fade-up" data-aos-duration="1700">
             <div>
-                <h1>Cześć {USER}!</h1>
+                <h1>
+                    Cześć <?php
+                        if(isset($_SESSION["userName"])){
+                            echo $_SESSION["userName"];
+                        }
+                    ?>!
+                </h1>
                 <h3>Co słychać?</h3>
             </div>
             <!-- TODO: kod php który po zalogowaniu pokaże nazwe użytkownika -->

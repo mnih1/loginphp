@@ -7,11 +7,15 @@
         require_once("config.php");
         require_once("functions.php");
 
-        if(checkInput($mail, $pass) !== false ){
+        if(checkInputLogin($mail, $pass) !== false ){
             header("location: ../signin.php?error=emptyInput");
             exit();
         }
 
-        loginUser($conn, $username, $pass)
+        loginUser($conn, $mail, $pass);
         // 1:36:14
+    }
+    else {
+        header("location: ../signin.php?error=cosposzlonietak");
+        exit();
     }
