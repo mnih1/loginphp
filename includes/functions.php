@@ -144,7 +144,7 @@
             $checkpass = password_verify($pass, $passHashed);
         
             if($checkpass === false){
-                header("location: ../signin.php?error=wrongpass");
+                header("location: ../signin.php?error=wronglogin");
                 exit();
             }
             else if($checkpass === true){
@@ -154,7 +154,7 @@
                 exit();
             }
         } else {
-            header("location: ../signin.php?error=nouser");
+            header("location: ../signin.php?error=wronglogin");
             exit();
         }
         mysqli_stmt_close($stmt);

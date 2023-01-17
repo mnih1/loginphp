@@ -87,7 +87,7 @@
                             echo "<p class='error-name'>Pole nie może być puste!</p>";
                         }
                         if ($_GET["error"] == "wronglogin"){
-                            echo "<p class='error-name'>Email lub hasło jest niepoprawne</p>";
+                            echo "<p class='error-name'>Email lub hasło jest niepoprawne!</p>";
                         }
                     }
                 ?>
