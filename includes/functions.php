@@ -42,9 +42,14 @@
         }
         return $result;
     }
+<<<<<<< HEAD
 
     function userExists($conn, $username, $mail){
         $sql = "SELECT * FROM users WHERE username = ? AND mail = ?;";
+=======
+    function userExists($conn, $username){
+        $sql = "SELECT * FROM users WHERE username = ?;";
+>>>>>>> 76365050f360dfe3db8b323ff1abbe9292fae7da
         $stmt = mysqli_stmt_init($conn);
 
         if (!mysqli_stmt_prepare($stmt, $sql)){
@@ -52,7 +57,33 @@
             exit();
         }
 
-        mysqli_stmt_bind_param($stmt, "ss", $username, $mail);
+        mysqli_stmt_bind_param($stmt, "s", $username);
+        mysqli_stmt_execute($stmt);
+
+        $resultData = mysqli_stmt_get_result($stmt);
+
+        if ($row =mysqli_fetch_assoc($resultData)) {
+            return $row;
+        }
+        else{
+            $result = false;
+            return $result;
+        }
+
+        mysqli_stmt_close($stmt);
+
+    }
+
+    function emialExists($conn, $mail){
+        $sql = "SELECT * FROM users WHERE mail = ?;";
+        $stmt = mysqli_stmt_init($conn);
+
+        if (!mysqli_stmt_prepare($stmt, $sql)){
+            header("location: ../signup.php?error=stmtFailed");
+            exit();
+        }
+
+        mysqli_stmt_bind_param($stmt, "s", $mail);
         mysqli_stmt_execute($stmt);
 
         $resultData = mysqli_stmt_get_result($stmt);

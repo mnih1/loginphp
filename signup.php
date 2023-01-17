@@ -83,7 +83,7 @@
 
                     <?php
                         if (isset($_GET["error"])){
-                            if ($_GET["error"] == "emptyInput" || $_GET["error"] == "invalidEmail" || $_GET["error"] == "userExists"){
+                            if ($_GET["error"] == "emptyInput" || $_GET["error"] == "invalidEmail" || $_GET["error"] == "emailExists"){
                                 echo "class='fail'";
                             }
                         }
@@ -99,7 +99,7 @@
                         if ($_GET["error"] == "invalidEmail"){
                             echo "<p class='error-name'>Błędny email!</p>";
                         }
-                        if ($_GET["error"] == "userExists"){
+                        if ($_GET["error"] == "emialExists"){
                             echo "<p class='error-name'>Ten email już został zarejestrowany!</p>";
                         }
                     }
