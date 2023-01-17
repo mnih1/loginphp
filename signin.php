@@ -42,7 +42,7 @@
         <form action="includes/login.inc.php" method="post" data-aos="flip-right">
             <h1>Zaloguj</h1>
             <label for="input-login">
-                Login:
+                Email:
                 <input 
                 type="text" 
                 name="mail" 
