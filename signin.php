@@ -44,7 +44,7 @@
             <label for="input-login">
                 Email:
                 <input 
-                type="text" 
+                type="email" 
                 name="mail" 
                 placeholder="przykladowymail@gmail.com" 
                 id="input-login"
@@ -97,7 +97,7 @@
                 <hr>
             </div>
             
-            <a href="">Nie pamiętam hasła</a>
+            <a href="forgetPassword.php">Nie pamiętam hasła</a>
             <a href="signup.php">Zarejestruj się</a>
         </form>
     </div>

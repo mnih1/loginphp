@@ -14,7 +14,7 @@
 }
 .container form {
   width: 27%;
-  height: 500px;
+  height: 400px;
   margin: 40px auto;
   background-color: #404B69;
   padding: 16px;
@@ -26,6 +26,16 @@
   padding: 6px;
   text-align: center;
   margin: 8px 0;
+}
+.container form h1.forgetPassH1 {
+  margin: 0 !important;
+}
+.container form h4 {
+  width: 100%;
+  height: 50px;
+  padding: 6px;
+  text-align: center;
+  margin: 0 0 8px 0;
 }
 .container form label {
   width: 100%;
