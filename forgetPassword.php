@@ -39,7 +39,7 @@
     </nav>
 
     <div class="container">
-        <form action="includes/resetPass.inc.php" method="post" data-aos="flip-right">
+        <form action="includes/resetPass.inc.php" method="post" data-aos="flip-right" class="resetPass">
             <h1 class="forgetPassH1">Nie pamiętam hasła</h1>
             <h4>Wpisz swój email by zresetować hasło</h4>
             <label for="email">

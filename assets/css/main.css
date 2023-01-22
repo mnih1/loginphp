@@ -14,11 +14,14 @@
 }
 .container form {
   width: 27%;
-  height: 400px;
+  height: 500px;
   margin: 40px auto;
   background-color: #404B69;
   padding: 16px;
   border-radius: 18px;
+}
+.container form.resetPass {
+  height: 400px;
 }
 .container form h1 {
   width: 100%;
