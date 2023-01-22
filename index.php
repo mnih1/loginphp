@@ -44,11 +44,6 @@
                         echo "<a href='./signin.php'>Zaloguj</a>";
                     }
                 ?>
-            
-            
-                <!-- <form action="includes/logout.php" method="post">
-                    <input type="submit" value="Wyloguj się" name="logout_btn">
-                </form> -->
             </div>
         </div>
     </nav>
@@ -64,7 +59,6 @@
                 </h1>
                 <h3>Co słychać?</h3>
             </div>
-            <!-- TODO: kod php który po zalogowaniu pokaże nazwe użytkownika -->
         </div>
         <div class="start-box">
 

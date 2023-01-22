@@ -13,7 +13,6 @@
         }
 
         loginUser($conn, $mail, $pass);
-        // 1:36:14
     }
     else {
         header("location: ../signin.php?error=cosposzlonietak");

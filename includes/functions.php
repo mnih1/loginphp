@@ -42,6 +42,7 @@
         }
         return $result;
     }
+
     function userExists($conn, $username){
         $sql = "SELECT * FROM users WHERE username = ?;";
         $stmt = mysqli_stmt_init($conn);
@@ -109,7 +110,7 @@
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
 
-        header("location: ../signup.php?error=none");
+        header("location: ../signin.php");
         exit();
 
     }
