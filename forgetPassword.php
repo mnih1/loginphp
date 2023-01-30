@@ -49,7 +49,26 @@
                 placeholder="przykładowy@email.com"
                 name="mail" 
                 id="email"
+                <?php
+                    if (isset($_GET["error"])){
+                        if ($_GET["error"] == "emptyInput" || $_GET["error"] == "noEmail"){
+                            echo "class='fail'";
+                        }
+                    }
+                ?>
                 >
+                <?php
+                    if (isset($_GET["error"])){
+                        if ($_GET["error"] == "emptyInput"){
+                            echo "<p class='error-name'>Pole nie może być puste!</p>";
+                        }
+                    }
+                    if (isset($_GET["error"])){
+                        if ($_GET["error"] == "noEmail"){
+                            echo "<p class='error-name'>Nie ma takiego maila w bazie!</p>";
+                        }
+                    }
+                ?>
             </label>
 
             <div class="submit-box">

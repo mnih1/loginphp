@@ -162,3 +162,13 @@
         
     }
     
+
+    function checkInputForgetpass($mail){
+        $result;
+        if(empty($mail)){
+            $result = true;
+        }
+        else{
+            $result = false;
+        }
+    }
