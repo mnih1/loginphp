@@ -1,4 +1,5 @@
-Tworzenie użytkownika do bazy something
+Creating user to something database
 CREATE USER 'config'@'localhost' IDENTIFIED BY 'SuperTajneHaslo123@';
 
+Giving user privileges to do everything with database
 GRANT ALL PRIVILEGES ON something.* TO 'config'@'localhost' IDENTIFIED BY 'SuperTajneHaslo123@';
