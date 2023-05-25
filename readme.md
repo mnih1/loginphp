@@ -1,4 +1,4 @@
-I created this project to learn PHP (connection between database). For now work on this project has been stoped.
+I created this project to learn PHP (connection between database). For now work on this project has been stopped.
 
 Things that work and where done:
 
