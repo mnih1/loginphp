@@ -24,7 +24,7 @@ NOTE!
 THIS PROJECT WAS CREATED ONLY TO LEARN PHP.
 I forbid any use of my code without prior contact with me.
 
-MADE BY MNIH
+MADE BY MNIH in 2022
 
 Stworzyłem ten projekt, aby nauczyć się PHP (połączenia z bazą danych). Na razie praca nad tym projektem została wstrzymana.
 
@@ -52,4 +52,4 @@ UWAGA!
 TEN PROJEKT ZOSTAŁ STWORZONY WYŁĄCZNIE W CELU NAUKI PHP.
 Zabraniam jakiegokolwiek użycia mojego kodu bez wcześniejszego kontaktu ze mną.
 
-STWORZONE PRZEZ MNIH
+STWORZONE PRZEZ MNIH w 2022
